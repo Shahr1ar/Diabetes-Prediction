@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="Glucose <= 132.5\nentropy = 0.934\nsamples = 512\nvalue = [333, 179]\nclass = 0"] ;
+1 [label="Age <= 29.5\nentropy = 0.733\nsamples = 355\nvalue = [282, 73]\nclass = 0"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="BMI <= 45.4\nentropy = 0.493\nsamples = 204\nvalue = [182, 22]\nclass = 0"] ;
+1 -> 2 ;
+3 [label="entropy = 0.422\nsamples = 198\nvalue = [181, 17]\nclass = 0"] ;
+2 -> 3 ;
+4 [label="entropy = 0.65\nsamples = 6\nvalue = [1, 5]\nclass = 1"] ;
+2 -> 4 ;
+5 [label="BMI <= 26.9\nentropy = 0.923\nsamples = 151\nvalue = [100, 51]\nclass = 0"] ;
+1 -> 5 ;
+6 [label="entropy = 0.353\nsamples = 30\nvalue = [28, 2]\nclass = 0"] ;
+5 -> 6 ;
+7 [label="entropy = 0.974\nsamples = 121\nvalue = [72, 49]\nclass = 0"] ;
+5 -> 7 ;
+8 [label="BMI <= 30.2\nentropy = 0.91\nsamples = 157\nvalue = [51, 106]\nclass = 1"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="Glucose <= 166.5\nentropy = 0.965\nsamples = 41\nvalue = [25, 16]\nclass = 0"] ;
+8 -> 9 ;
+10 [label="entropy = 0.857\nsamples = 32\nvalue = [23, 9]\nclass = 0"] ;
+9 -> 10 ;
+11 [label="entropy = 0.764\nsamples = 9\nvalue = [2, 7]\nclass = 1"] ;
+9 -> 11 ;
+12 [label="Glucose <= 154.5\nentropy = 0.768\nsamples = 116\nvalue = [26, 90]\nclass = 1"] ;
+8 -> 12 ;
+13 [label="entropy = 0.943\nsamples = 50\nvalue = [18, 32]\nclass = 1"] ;
+12 -> 13 ;
+14 [label="entropy = 0.533\nsamples = 66\nvalue = [8, 58]\nclass = 1"] ;
+12 -> 14 ;
+}
